@@ -1,8 +1,8 @@
 {
-    "name": "san4o101/upload-files",
+    "name": "san4o101/uploadFiles",
     "description": "Upload files package",
     "license": "MIT",
-    "version": "0.2",
+    "version": "0.3",
     "authors": [
         {
             "name": "Alex Syvolap",
@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "san4o101\\upload-files\\src\\UploadFileServiceProvider"
+                "san4o101\\uploadFiles\\src\\UploadFileServiceProvider"
             ]
         }
     },
