@@ -1,0 +1,31 @@
+{
+    "name": "san4o101/upload-files",
+    "description": "Upload files package",
+    "authors": [
+        {
+            "name": "Alex Syvolap",
+            "email": "snikersmc123@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "james-heinrich/getid3": "^1.9@dev",
+        "ext-gd": "*",
+        "ext-fileinfo": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "san4o101\\uploadFiles\\UploadFileServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "San4o101\\uploadFiles\\": "src/"
+        },
+        "files": [
+            "src/Services/UploadFileService.php"
+        ]
+    }
+}
