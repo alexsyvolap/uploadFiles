@@ -1,13 +1,15 @@
 {
     "name": "san4o101/upload-files",
     "description": "Upload files package",
+    "license": "MIT",
+    "version": "0.1",
     "authors": [
         {
             "name": "Alex Syvolap",
             "email": "snikersmc123@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "james-heinrich/getid3": "^1.9@dev",
         "ext-gd": "*",
