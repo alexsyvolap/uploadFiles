@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "san4o101\\uploadFiles\\UploadFileServiceProvider"
+                "san4o101\\uploadFiles\\src\\UploadFileServiceProvider"
             ]
         }
     },
