@@ -10,9 +10,9 @@ class UploadFileServiceProvider extends ServiceProvider
     public function register()
     {
         $this->loadMigrations();
-        $this->publishModel();
         $this->publishConfig();
         // $this->publishService();
+        // $this->publishModel();
     }
 
     public function boot()
