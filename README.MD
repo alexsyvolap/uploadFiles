@@ -2,6 +2,7 @@
 
 ## Install
 - `php artisan vendor:publish`
+- `php artisan config:clear` or `php artisan config:cache`
 ## Service
 - `UploadFileService`
 ## Model

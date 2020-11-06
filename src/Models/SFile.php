@@ -4,6 +4,7 @@ namespace san4o101\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * @property int $id
@@ -43,6 +44,32 @@ class SFile extends Model
         parent::__construct($attributes);
         $this->setTable(config('upload_files.tables.main'));
     }
-
-
+    
+    public function delete()
+    {
+        try {
+            $this->deleteFile();
+        } catch (\Exception $exception) {
+            return false;
+        }
+        
+        return parent::delete();
+    }
+    
+    public function forceDelete()
+    {
+        try {
+            $this->deleteFile();
+        } catch (\Exception $exception) {
+            return false;
+        }
+        
+        return parent::forceDelete();
+    }
+    
+    private function deleteFile() 
+    {
+        $fullPath = "{$this->folder}/{$this->hash}.{$this->extension}";
+        Storage::disk($this->disk)->delete($fullPath);
+    }
 }

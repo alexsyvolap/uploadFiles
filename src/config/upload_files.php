@@ -8,6 +8,7 @@ return [
 
     'models' => [
         'name' => 'SFile',
+        'main' => 'san4o101\Models\SFile'
     ],
     
     'services' => [

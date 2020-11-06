@@ -20,7 +20,8 @@
             "San4o101\\uploadFiles\\": "src"
         },
         "files": [
-            "src/Services/UploadFileService.php"
+            "src/Services/UploadFileService.php",
+            "src/Models/SFile.php"
         ]
     },
     "extra": {

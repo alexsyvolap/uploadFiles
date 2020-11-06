@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 
 class UploadFileService
 {
-    public const VERSION = '0.1';
+    public const VERSION = '0.0.1';
 
     public const IMAGE = 'image';
     public const VIDEO = 'video';
