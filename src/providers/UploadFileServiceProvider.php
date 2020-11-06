@@ -32,7 +32,7 @@ class UploadFileServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/migrations');
 
         $this->publishes([
-            __DIR__ . '/../migrations' => database_path('migrations/san4o101'),
+            __DIR__ . '/../migrations' => database_path('migrations'),
         ], 'san4o101-migrations');
     }
 
@@ -40,7 +40,7 @@ class UploadFileServiceProvider extends ServiceProvider
     {
         $serviceName = config('upload_files.models.name');
         $this->publishes([
-            __DIR__ . '/../Services/UploadFileService.php' => app_path("Services/san4o101/{$serviceName}.php"),
+            __DIR__ . '/../Services/UploadFileService.php' => app_path("Services/{$serviceName}.php"),
         ], 'san4o101-service');
     }
 
@@ -48,7 +48,7 @@ class UploadFileServiceProvider extends ServiceProvider
     {
         $modelName = config('upload_files.models.name');
         $this->publishes([
-            __DIR__ . '/../Models/SFile.php' => app_path("Models/san4o101/{$modelName}.php"),
+            __DIR__ . '/../Models/SFile.php' => app_path("Models/{$modelName}.php"),
         ], 'san4o101-migrations');
     }
 }
