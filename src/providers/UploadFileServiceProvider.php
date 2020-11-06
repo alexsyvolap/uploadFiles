@@ -38,15 +38,17 @@ class UploadFileServiceProvider extends ServiceProvider
 
     public function publishService()
     {
+        $serviceName = config('upload_files.models.name');
         $this->publishes([
-            __DIR__ . '/../Services/UploadFileService.php' => app_path('Services/san4o101/UploadFileService.php'),
+            __DIR__ . '/../Services/UploadFileService.php' => app_path("Services/san4o101/{$serviceName}.php"),
         ], 'san4o101-service');
     }
 
     public function publishModel()
     {
+        $modelName = config('upload_files.models.name');
         $this->publishes([
-            __DIR__ . '/../Models/SFile.php' => app_path('Models/san4o101/UploadFileService.php'),
+            __DIR__ . '/../Models/SFile.php' => app_path("Models/san4o101/{$modelName}.php"),
         ], 'san4o101-migrations');
     }
 }

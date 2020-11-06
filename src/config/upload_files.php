@@ -7,7 +7,11 @@ return [
     ],
 
     'models' => [
-        'main' => 'san4o101\Models\SFile'
+        'name' => 'SFile',
+    ],
+    
+    'services' => [
+        'name' => 'UploadFileService',
     ],
 
     'allow_mime_types' => [
