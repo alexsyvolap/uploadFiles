@@ -15,19 +15,19 @@
         "ext-gd": "*",
         "ext-fileinfo": "*"
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "san4o101\\upload-files\\src\\UploadFileServiceProvider"
-            ]
-        }
-    },
     "autoload": {
         "psr-4": {
-            "San4o101\\uploadFiles\\": "src/"
+            "San4o101\\uploadFiles\\": "src"
         },
         "files": [
             "src/Services/UploadFileService.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "san4o101\\uploadFiles\\src\\UploadFileServiceProvider"
+            ]
+        }
     }
 }
